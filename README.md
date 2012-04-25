@@ -218,7 +218,7 @@ Class Ipc.Cmd
 ```add(name, func [, scope [, doc [, numArgs]]])```  
 Adds a command.
 
-```set(object)```  
+```set(obj)```  
 The properties of ```object``` will become commands.
 
 ### Functions
