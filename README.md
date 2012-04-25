@@ -9,25 +9,25 @@ stream is one item of data.
 
 #### Class Overview
 
-```Ipc```  
+``Ipc``  
 This is th base class to create a server or a client (preferably  
 both).  
 
 **Complementing Classes**
 
-```Ipc.Cmd```  
+``Ipc.Cmd``  
 Easy command manager that plugs into the Ipc class.
 
-```Ipc.Cli```  
-Easy command line interface that plugs into the ```Ipc``` and  
-```Ipc.Cmd``` class.
+``Ipc.Cli``  
+Easy command line interface that plugs into the ``Ipc`` and  
+``Ipc.Cmd`` class.
 
 Notice: Although it is very nice to have those two classes, you  
 are not forced to use them.
 
 ### Installation
 
-```npm install easy-ipc```
+``npm install easy-ipc``
 
 ### Usage
 
@@ -74,7 +74,7 @@ ipc
 .start()
 ```
 
-Quick introduction to ```Ipc.Cmd``` and ```Ipc.Cli```:
+Quick introduction to ``Ipc.Cmd`` and ``Ipc.Cli``:
 
 ```js
 var Ipc = require('easy-ipc')
@@ -119,26 +119,26 @@ Inherits from stream.Stream
 
 ### Constructor
 
-```new Ipc(options)```
+``new Ipc(options)``
 
 ### Options
 
-```socketPath``` (default: false)  
+``socketPath`` (default: false)  
 The path to the socket to connect to.
 
-```port``` (default: 7100)  
+``port`` (default: 7100)  
 The port-number to connect to.
 
-```host``` (default: localhost)  
+``host`` (default: localhost)  
 The hostname to connect to.
 
-```reconnect``` (default: true)  
+``reconnect`` (default: true)  
 Reconnect on disconnect.
 
-```delayReconnect``` (default: 3000)  
+``delayReconnect`` (default: 3000)  
 Delay reconnection for X milliseconds.
 
-```dataType``` (default: json)  
+``dataType`` (default: json)  
 Type of the inter-process data. Until now, ``json`` or ``text``  
 is supported.
 
@@ -156,16 +156,16 @@ Number of reconnects done.
 
 ### Methods
 
-```connect([port or socketPath] [, host] [, cb])```  
+``connect([port or socketPath] [, host] [, cb])``  
 Connect to a server.
 
-```listen([port or socketPath] [, host] [, cb])```  
+``listen([port or socketPath] [, host] [, cb])``  
 Listen to a socket for connections. Aka be a server.
 
-```start([port or socketPath] [, host] [, cb])```  
-Combines ```connect()``` and ```listen()```: At first ```start()```  
-tryes to connect to a server. If this fails, ```start()``` calls  
-```listen()``` and creates a server on success.
+``start([port or socketPath] [, host] [, cb])``  
+Combines ``connect()`` and ``listen()``: At first ``start()``  
+tryes to connect to a server. If this fails, ``start()`` calls  
+``listen()`` and creates a server on success.
 
 Notice: This order (first **connect**, then **listen**) is very nice for  
 UNIX domain sockets.
@@ -211,7 +211,7 @@ Class Ipc.Cmd
 
 ### Constructor
 
-```new Ipc.Cmd(ipc)```
+``new Ipc.Cmd(ipc)``
 
 ### Methods
 
@@ -223,9 +223,9 @@ The properties of ``object`` will become commands.
 
 ### Functions
 
-```Ipc.Cmd.isCmd(data)```  
-```Ipc.Cmd.mkCmd(name [, arg1 [, arg2 [, ...]]])```  
-```Ipc.Cmd.line2cmd(line)```
+``Ipc.Cmd.isCmd(data)``  
+``Ipc.Cmd.mkCmd(name [, arg1 [, arg2 [, ...]]])``  
+``Ipc.Cmd.line2cmd(line)``
 
 
 Class Ipc.Cli
@@ -233,13 +233,13 @@ Class Ipc.Cli
 
 ### Constructor
 
-```new Ipc.Cli(ipc, connection)```
+``new Ipc.Cli(ipc, connection)``
 
 ### Methods
 
-```setConnection(connection)```  
-```console(true or false)```  
-```consoleRefresh()```
+``setConnection(connection)``  
+``console(true or false)``  
+``consoleRefresh()``
 
 MIT License
 -----------
