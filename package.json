@@ -6,7 +6,10 @@
     "name": "Oliver Leics"
     , "email": "oliver.leics@gmail.com"
   }
-  , "repository": {}
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/oleics/node-easy-ipc.git"
+  }
   , "contributors": []
   , "main": "./lib/ipc.js"
   , "directories": {
