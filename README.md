@@ -74,7 +74,7 @@ ipc
 .start()
 ```
 
-Quick introduction to ``Ipc.Cmd`` and ``Ipc.Cli``:
+Quick introduction to ```Ipc.Cmd``` and ```Ipc.Cli```:
 
 ```js
 var Ipc = require('easy-ipc')
@@ -110,7 +110,7 @@ ipc
   })
 ```
 
-Please see the [examples-folder](.) for more.
+Please see the [examples-folder](/oleics/node-easy-ipc/tree/master/examples) for more.
 
 Class Ipc
 ---------
@@ -219,7 +219,7 @@ Class Ipc.Cmd
 Adds a command.
 
 ```set(object)```  
-The properties of ``object`` will become commands.
+The properties of ```object``` will become commands.
 
 ### Functions
 
