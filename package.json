@@ -1,0 +1,25 @@
+{
+  "name": "easy-ipc"
+  , "description": "Easy inter-process communication over TCP/IP and/or UNIX domain sockets"
+  , "version": "0.0.0"
+  , "author": {
+    "name": "Oliver Leics"
+    , "email": "oliver.leics@gmail.com"
+  }
+  , "repository": {}
+  , "contributors": []
+  , "main": "./lib/ipc.js"
+  , "directories": {
+    "lib": "./lib"
+  }
+  , "engines": {
+    "node": ">= 0.6.0"
+  }
+  , "dependencies": {
+    "lazy": "1.0.x"
+  }
+  , "devDependencies": {
+  }
+  , "scripts": {
+  }
+}
