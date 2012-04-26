@@ -4,15 +4,13 @@ module.exports = {
   , ping: ping
 }
 
-var Ipc = require('../..')
-
 function join(foo, bar, conn, server) {
   conn.write('joined')
-  conn.write(Ipc.Cmd.mkCmd('joined'))
+  conn.cmd.joined()
 }
 join.doc = 'Join the table.'
 
 function ping(now, conn, server) {
-  conn.write(Ipc.Cmd.mkCmd('pong', Date.now(), now))
+  conn.cmd.pong(Date.now(), now)
 }
 ping.doc = ''

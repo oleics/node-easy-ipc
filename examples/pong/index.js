@@ -32,7 +32,7 @@ ipc
     console.log('client-mode')
     
     // load client-commands
-    var ipccmd = new Ipc.Cmd(ipc)
+    var ipccmd = new Ipc.Cmd(ipc, conn)
     ipccmd.set(require('./client'))
     
     // load cli

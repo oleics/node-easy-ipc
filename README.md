@@ -89,8 +89,8 @@ ipc
     ipccmd.set({
       ping: function(now, conn) {
         // send a command to the client
-        conn.write(Ipc.Cmd.mkCmd('pong', now))
-        // conn.client.pong(now) will come in the not so far future..
+        conn.cmd.pong(now)
+        // Raw: conn.write(Ipc.Cmd.mkCmd('pong', now))
       }
     })
   })
@@ -98,7 +98,7 @@ ipc
     // client-mode
     
     // set client-commands
-    var ipccmd = new Ipc.Cmd(ipc)
+    var ipccmd = new Ipc.Cmd(ipc, conn)
     ipccmd.set({
       pong: function(now, conn) {
         console.log('rtt: %d', Date.now() - now)
@@ -211,7 +211,7 @@ Class Ipc.Cmd
 
 ### Constructor
 
-``new Ipc.Cmd(ipc)``
+``new Ipc.Cmd(ipc, conn)``
 
 ### Methods
 
@@ -223,6 +223,7 @@ The properties of ``object`` will become commands.
 
 ### Functions
 
+``Ipc.Cmd.exec(cmdName, arg1, arg2, ..., conn)``  
 ``Ipc.Cmd.isCmd(data)``  
 ``Ipc.Cmd.mkCmd(name [, arg1 [, arg2 [, ...]]])``  
 ``Ipc.Cmd.line2cmd(line)``
