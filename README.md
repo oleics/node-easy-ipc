@@ -223,6 +223,7 @@ The properties of ``object`` will become commands.
 
 ### Functions
 
+``Ipc.Cmd.introspect(conn)``  
 ``Ipc.Cmd.exec(cmdName, arg1, arg2, ..., conn)``  
 ``Ipc.Cmd.isCmd(data)``  
 ``Ipc.Cmd.mkCmd(name [, arg1 [, arg2 [, ...]]])``  
