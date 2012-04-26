@@ -1,7 +1,7 @@
 {
   "name": "easy-ipc"
   , "description": "Easy inter-process communication over TCP/IP and/or UNIX domain sockets"
-  , "version": "0.0.1"
+  , "version": "0.1.0"
   , "author": {
     "name": "Oliver Leics"
     , "email": "oliver.leics@gmail.com"
