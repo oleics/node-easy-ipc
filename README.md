@@ -211,7 +211,7 @@ Class Ipc.Cmd
 
 ### Constructor
 
-``new Ipc.Cmd(ipc, conn)``
+``new Ipc.Cmd(ipc [, conn])``
 
 ### Methods
 
@@ -234,7 +234,7 @@ Class Ipc.Cli
 
 ### Constructor
 
-``new Ipc.Cli(ipc, connection)``
+``new Ipc.Cli(ipc [, conn])``
 
 ### Methods
 
