@@ -16,4 +16,17 @@ function pong(servertime, now, conn) {
   }, 1000)
 }
 pong.doc = ''
-pong.countArgs = -1
+pong.sig = [
+  {
+    name: 'servertime'
+    , required: true
+    , type: 'Number'
+    , description: ''
+  }
+  , {
+    name: 'now'
+    , required: true
+    , type: 'Number'
+    , description: ''
+  }
+]
