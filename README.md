@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/oleics/node-easy-ipc.png)](http://travis-ci.org/oleics/node-easy-ipc)
 
 Easy IPC
 ========
